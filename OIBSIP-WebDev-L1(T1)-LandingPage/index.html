@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="NeuralAI – The next-generation AI platform for smart teams. Automate, analyse, and accelerate your workflow with cutting-edge artificial intelligence." />
+  <title>NeuralAI – Intelligent Platform for Modern Teams</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo" id="logo-link">
+        <span class="logo-icon">⬡</span>
+        <span class="logo-text">NeuralAI</span>
+      </a>
+      <nav class="nav-links" id="nav-links">
+        <a href="#features" id="nav-features">Features</a>
+        <a href="#about" id="nav-about">About</a>
+        <a href="#how" id="nav-how">How It Works</a>
+        <a href="#testimonials" id="nav-testimonials">Reviews</a>
+        <a href="#contact" id="nav-contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a href="#contact" class="btn btn-outline" id="btn-login">Log In</a>
+        <a href="#contact" class="btn btn-primary" id="btn-get-started">Get Started</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section class="hero" id="home">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge" id="hero-badge">
+          <span class="badge-dot"></span>
+          AI-Powered Platform · Now Live
+        </div>
+        <h1 class="hero-title">
+          Unlock the Power of<br />
+          <span class="gradient-text">Artificial Intelligence</span>
+        </h1>
+        <p class="hero-subtitle">
+          NeuralAI transforms how your team works — automating tasks, surfacing insights, and accelerating decisions
+          with enterprise-grade AI built for the modern era.
+        </p>
+        <div class="hero-cta" id="hero-cta">
+          <a href="#contact" class="btn btn-primary btn-lg" id="hero-btn-primary">Start Free Trial</a>
+          <a href="#features" class="btn btn-ghost btn-lg" id="hero-btn-ghost">
+            <span class="play-icon">▶</span> See Features
+          </a>
+        </div>
+        <div class="hero-stats" id="hero-stats">
+          <div class="stat-item">
+            <strong>50K+</strong><span>Active Users</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>99.9%</strong><span>Uptime SLA</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <strong>3x</strong><span>Faster Workflows</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual" id="hero-visual">
+        <div class="hero-img-wrap">
+          <img src="images/hero.jpg" alt="AI Brain visualization showing connected intelligence modules"
+            class="hero-img" id="hero-img" loading="eager" />
+          <div class="hero-img-glow"></div>
+        </div>
+        <div class="floating-card card-top" id="float-card-1">
+          <span class="card-emoji">🧠</span>
+          <div>
+            <strong>Neural Engine</strong>
+            <small>Processing 1.2M ops/sec</small>
+          </div>
+        </div>
+        <div class="floating-card card-bottom" id="float-card-2">
+          <span class="card-emoji">⚡</span>
+          <div>
+            <strong>98% Accuracy</strong>
+            <small>Model confidence score</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+        <path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="var(--bg-secondary)" />
+      </svg>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FEATURES ═══════════════════════ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Features</span>
+        <h2 class="section-title">Everything Your Team Needs</h2>
+        <p class="section-subtitle">Six powerful capabilities packed into one seamless platform — designed for speed,
+          scale, and simplicity.</p>
+      </div>
+      <div class="features-grid" id="features-grid">
+
+        <div class="feature-card" id="feature-1">
+          <div class="feature-img-wrap">
+            <img src="images/feature1.jpg" alt="Developer workspace with code editor on laptop" loading="lazy" />
+            <div class="feature-tag">Dev Tools</div>
+          </div>
+          <div class="feature-body">
+            <div class="feature-icon">💻</div>
+            <h3>Smart Development</h3>
+            <p>AI-assisted code generation, review, and debugging directly inside your IDE — no context switching
+              required.</p>
+            <a href="#contact" class="feature-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feature-2">
+          <div class="feature-img-wrap">
+            <img src="images/feature2.jpg" alt="Team collaborating around laptops in a creative workspace"
+              loading="lazy" />
+            <div class="feature-tag">Teams</div>
+          </div>
+          <div class="feature-body">
+            <div class="feature-icon">🤝</div>
+            <h3>Seamless Collaboration</h3>
+            <p>Real-time co-editing, intelligent task assignment, and AI-generated summaries keep every team member in
+              sync.</p>
+            <a href="#contact" class="feature-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feature-3">
+          <div class="feature-img-wrap">
+            <img src="images/feature3.jpg" alt="Analytics dashboard with charts and data visualizations"
+              loading="lazy" />
+            <div class="feature-tag">Analytics</div>
+          </div>
+          <div class="feature-body">
+            <div class="feature-icon">📊</div>
+            <h3>Powerful Analytics</h3>
+            <p>Unified dashboards with predictive analytics, anomaly detection, and natural-language query — insights in
+              seconds.</p>
+            <a href="#contact" class="feature-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feature-4">
+          <div class="feature-img-wrap">
+            <img src="images/feature4.jpg" alt="Modern laptop in neon-lit developer setup" loading="lazy" />
+            <div class="feature-tag">Interface</div>
+          </div>
+          <div class="feature-body">
+            <div class="feature-icon">🎨</div>
+            <h3>Modern Interface</h3>
+            <p>A beautifully crafted UI that adapts to your workflow — dark mode, custom themes, and accessibility
+              built-in.</p>
+            <a href="#contact" class="feature-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feature-5">
+          <div class="feature-img-wrap">
+            <img src="images/feature5.jpg" alt="AI network diagram with hexagonal nodes and connections"
+              loading="lazy" />
+            <div class="feature-tag">AI Core</div>
+          </div>
+          <div class="feature-body">
+            <div class="feature-icon">🔗</div>
+            <h3>Neural Networks</h3>
+            <p>State-of-the-art transformer models fine-tuned on your domain data — delivering precision where it
+              matters most.</p>
+            <a href="#contact" class="feature-link">Learn more →</a>
+          </div>
+        </div>
+
+        <div class="feature-card" id="feature-6">
+          <div class="feature-img-wrap">
+            <img src="images/feature6.jpg" alt="Real-time data dashboard with metrics and system connections"
+              loading="lazy" />
+            <div class="feature-tag">Insights</div>
+          </div>
+          <div class="feature-body">
+            <div class="feature-icon">⚡</div>
+            <h3>Real-Time Insights</h3>
+            <p>Live data pipelines stream intelligence to your dashboards — monitor KPIs, alerts, and trends the moment
+              they happen.</p>
+            <a href="#contact" class="feature-link">Learn more →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section class="about" id="about">
+    <div class="container about-inner">
+      <div class="about-visual">
+        <img src="images/feature2.jpg" alt="Team collaborating with AI-powered tools" class="about-img"
+          loading="lazy" />
+        <div class="about-badge-wrap">
+          <div class="about-badge" id="about-badge">
+            <span class="about-badge-num">4.9★</span>
+            <span>Rated by 12,000+ users</span>
+          </div>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="section-tag">About NeuralAI</span>
+        <h2 class="section-title">Built by Engineers,<br />Loved by Teams</h2>
+        <p>We founded NeuralAI with a single belief: AI should amplify human potential, not replace it. Our platform is
+          designed with your team's real workflows in mind — intuitive, powerful, and always learning.</p>
+        <ul class="about-list">
+          <li><span class="check">✓</span> Enterprise-grade security &amp; compliance (SOC 2, GDPR)</li>
+          <li><span class="check">✓</span> On-premise and cloud deployment options</li>
+          <li><span class="check">✓</span> Dedicated onboarding &amp; 24/7 support</li>
+          <li><span class="check">✓</span> Continuous model updates — always state-of-the-art</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" id="about-cta">Meet the Team</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ HOW IT WORKS ═══════════════════════ -->
+  <section class="how" id="how">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">Up and Running in Minutes</h2>
+        <p class="section-subtitle">No lengthy setup. No complex configs. Just connect, configure, and go.</p>
+      </div>
+      <div class="steps-row" id="steps-row">
+        <div class="step-card" id="step-1">
+          <div class="step-num">01</div>
+          <div class="step-icon">🔌</div>
+          <h3>Connect Your Stack</h3>
+          <p>Integrate with 200+ tools — GitHub, Slack, Jira, Salesforce and more — via one-click connectors.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card" id="step-2">
+          <div class="step-num">02</div>
+          <div class="step-icon">🧬</div>
+          <h3>Train Your Model</h3>
+          <p>Upload your data, pick a base model, and let NeuralAI fine-tune it to your domain in hours, not weeks.</p>
+        </div>
+        <div class="step-arrow">→</div>
+        <div class="step-card" id="step-3">
+          <div class="step-num">03</div>
+          <div class="step-icon">🚀</div>
+          <h3>Deploy &amp; Scale</h3>
+          <p>Push to production with one click. Auto-scaling handles traffic spikes while costs stay predictable.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ TESTIMONIALS ═══════════════════════ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">Loved by Thousands</h2>
+        <p class="section-subtitle">Don't take our word for it — hear from the teams that power their work with
+          NeuralAI.</p>
+      </div>
+      <div class="testimonials-grid" id="testimonials-grid">
+        <div class="testi-card" id="testi-1">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"NeuralAI cut our data analysis time from days to hours. The predictive dashboards alone
+            are worth the investment."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--accent-1)">SJ</div>
+            <div>
+              <strong>Sarah Johnson</strong>
+              <small>Head of Data, FinTechCo</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card featured" id="testi-2">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"The collaboration features are game-changing. Our remote team feels more connected than
+            ever, and the AI suggestions in meetings are incredible."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--accent-2)">MR</div>
+            <div>
+              <strong>Marcus Rivera</strong>
+              <small>Engineering Lead, ScaleUp Inc</small>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card" id="testi-3">
+          <div class="testi-stars">★★★★★</div>
+          <p class="testi-text">"We deployed a custom NLP model in under a week. The support team was phenomenal
+            throughout the whole process."</p>
+          <div class="testi-author">
+            <div class="testi-avatar" style="background:var(--accent-3)">AK</div>
+            <div>
+              <strong>Aisha Khan</strong>
+              <small>CTO, MedAnalytics</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CTA BANNER ═══════════════════════ -->
+  <section class="cta-banner" id="cta-banner">
+    <div class="cta-glow"></div>
+    <div class="container cta-inner">
+      <h2>Ready to Supercharge Your Team?</h2>
+      <p>Join 50,000+ professionals already using NeuralAI to work smarter every day.</p>
+      <div class="cta-actions">
+        <a href="#contact" class="btn btn-white btn-lg" id="cta-btn-primary">Start Free — No Credit Card</a>
+        <a href="#features" class="btn btn-outline-white btn-lg" id="cta-btn-secondary">Explore Features</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact Us</span>
+        <h2 class="section-title">Get in Touch</h2>
+        <p class="section-subtitle">Have questions? Our team is ready to help you find the right plan.</p>
+      </div>
+      <div class="contact-wrap">
+        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="Jane" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Work Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@company.com" required />
+          </div>
+          <div class="form-group">
+            <label for="company">Company</label>
+            <input type="text" id="company" name="company" placeholder="Acme Corp" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about your use case..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="form-submit">Send Message</button>
+          <p class="form-note" id="form-success" style="display:none;">✅ Message sent! We'll respond within 24 hours.
+          </p>
+        </form>
+        <div class="contact-info" id="contact-info">
+          <div class="info-card">
+            <span class="info-icon">📧</span>
+            <div>
+              <strong>Email</strong>
+              <a href="mailto:rajat.shrmaa26@gmail.com">rajat.shrmaa26@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">📞</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+919079367627">+91 9079367627</a>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">📍</span>
+            <div>
+              <strong>HQ</strong>
+              <span>India, 302017</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="info-icon">💬</span>
+            <div>
+              <strong>Live Chat</strong>
+              <span>Available 24/7 in-app</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer" id="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-icon">⬡</span>
+          <span class="logo-text">NeuralAI</span>
+        </a>
+        <p>Intelligent platform for modern teams. Built with ❤️ in India.</p>
+        <div class="social-links">
+          <a href="#" id="social-twitter" aria-label="Twitter">𝕏</a>
+          <a href="#" id="social-linkedin" aria-label="LinkedIn">in</a>
+          <a href="#" id="social-github" aria-label="GitHub">⌥</a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="#features">Features</a>
+          <a href="#how">How It Works</a>
+          <a href="#contact">Pricing</a>
+          <a href="#contact">Changelog</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#about">About</a>
+          <a href="#contact">Careers</a>
+          <a href="#contact">Blog</a>
+          <a href="#contact">Press</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#contact">Privacy Policy</a>
+          <a href="#contact">Terms of Service</a>
+          <a href="#contact">Cookie Policy</a>
+          <a href="#contact">Security</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 NeuralAI, Inc. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky navbar
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Smooth close on nav link click
+    navLinks.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // Scroll reveal animation
+    const revealEls = document.querySelectorAll('.feature-card, .step-card, .testi-card, .about-img, .hero-content, .hero-visual');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => { el.classList.add('reveal'); observer.observe(el); });
+
+    // Contact form
+    function handleSubmit(e) {
+      e.preventDefault();
+      document.getElementById('form-success').style.display = 'block';
+      e.target.reset();
+      setTimeout(() => document.getElementById('form-success').style.display = 'none', 5000);
+    }
+  </script>
+</body>
+
+</html>
