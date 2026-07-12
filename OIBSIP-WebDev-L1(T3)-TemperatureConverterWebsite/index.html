@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A modern temperature converter that converts between Celsius, Fahrenheit, and Kelvin instantly." />
+  <title>Temperature Converter | ThermoCalc</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Animated background orbs -->
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+  <div class="bg-orb orb-3"></div>
+
+  <div class="container">
+
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-icon">🌡</div>
+      <h1>ThermoCalc</h1>
+      <p class="subtitle">Instant Temperature Converter</p>
+    </div>
+
+    <!-- Converter Card -->
+    <div class="card">
+
+      <!-- Input Section -->
+      <div class="input-group">
+        <label for="temperature">Temperature Value</label>
+        <div class="input-wrapper">
+          <span class="input-icon">🌡</span>
+          <input
+            type="number"
+            id="temperature"
+            placeholder="e.g. 25"
+            autocomplete="off"
+            oninput="liveConvert()"
+          />
+        </div>
+      </div>
+
+      <!-- Unit Selection -->
+      <div class="input-group">
+        <label for="unit">Input Unit</label>
+        <div class="select-wrapper">
+          <select id="unit" onchange="liveConvert()">
+            <option value="C">° Celsius (°C)</option>
+            <option value="F">° Fahrenheit (°F)</option>
+            <option value="K">Kelvin (K)</option>
+          </select>
+          <span class="select-arrow">▾</span>
+        </div>
+      </div>
+
+      <!-- Error Message -->
+      <p id="error" role="alert" aria-live="polite"></p>
+
+      <!-- Action Buttons -->
+      <div class="btn-group">
+        <button id="convertBtn" onclick="convertTemperature()">
+          <span class="btn-icon">⚡</span> Convert
+        </button>
+        <button id="resetBtn" class="btn-reset" onclick="resetForm()">
+          <span class="btn-icon">↺</span> Reset
+        </button>
+      </div>
+
+      <!-- Results Section -->
+      <div class="result" id="resultBox">
+        <h2 class="result-title">Converted Values</h2>
+        <div class="result-grid">
+
+          <div class="result-card celsius-card">
+            <div class="card-icon">🧊</div>
+            <div class="card-label">Celsius</div>
+            <div class="card-value" id="celsius">—</div>
+            <div class="card-unit">°C</div>
+          </div>
+
+          <div class="result-card fahrenheit-card">
+            <div class="card-icon">🔥</div>
+            <div class="card-label">Fahrenheit</div>
+            <div class="card-value" id="fahrenheit">—</div>
+            <div class="card-unit">°F</div>
+          </div>
+
+          <div class="result-card kelvin-card">
+            <div class="card-icon">⚛</div>
+            <div class="card-label">Kelvin</div>
+            <div class="card-value" id="kelvin">—</div>
+            <div class="card-unit">K</div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Formula Reference -->
+      <details class="formula-section">
+        <summary>📐 Conversion Formulas</summary>
+        <div class="formula-grid">
+          <div class="formula">°F = (°C × 9/5) + 32</div>
+          <div class="formula">K = °C + 273.15</div>
+          <div class="formula">°C = (°F − 32) × 5/9</div>
+          <div class="formula">K = (°F − 32) × 5/9 + 273.15</div>
+        </div>
+      </details>
+
+    </div>
+
+    <p class="footer-note">All values rounded to 2 decimal places · Absolute Zero: −273.15 °C</p>
+
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    /** Live convert while typing */
+    function liveConvert() {
+      const val = document.getElementById('temperature').value;
+      if (val !== '') convertTemperature();
+      else resetDisplay();
+    }
+
+    /** Reset everything back to initial state */
+    function resetForm() {
+      document.getElementById('temperature').value = '';
+      document.getElementById('unit').value = 'C';
+      document.getElementById('error').innerHTML = '';
+      resetDisplay();
+    }
+
+    /** Reset result card displays */
+    function resetDisplay() {
+      ['celsius', 'fahrenheit', 'kelvin'].forEach(id => {
+        const el = document.getElementById(id);
+        el.classList.remove('updated');
+        el.textContent = '—';
+      });
+    }
+  </script>
+
+</body>
+</html>
