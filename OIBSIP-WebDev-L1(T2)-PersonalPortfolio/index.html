@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Rajat Sharma - Computer Science Engineer, Web Developer & Programmer. Personal portfolio showcasing skills, education, and projects." />
+  <meta name="keywords" content="Rajat Sharma, Portfolio, Computer Science, Web Developer, B.Tech, CSE" />
+  <meta name="author" content="Rajat Sharma" />
+  <title>Rajat Sharma | CS Engineer & Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <span class="logo-text">RS<span class="logo-dot">.</span></span>
+      </div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" id="nav-home">Home</a></li>
+        <li><a href="#about" class="nav-link" id="nav-about">About</a></li>
+        <li><a href="#skills" class="nav-link" id="nav-skills">Skills</a></li>
+        <li><a href="#education" class="nav-link" id="nav-education">Education</a></li>
+        <li><a href="#certificates" class="nav-link" id="nav-certificates">Certificates</a></li>
+        <li><a href="#projects" class="nav-link" id="nav-projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" id="nav-contact">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="particles" id="particles"></div>
+    </div>
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-greeting">
+          <span class="greeting-wave">👋</span>
+          <span>Hello, I'm</span>
+        </div>
+        <h1 class="hero-name">Rajat <span class="gradient-text">Sharma</span></h1>
+        <div class="hero-roles">
+          <span class="role-prefix">I'm a </span>
+          <span class="typed-text" id="typedText"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-tagline">
+          Crafting elegant digital experiences through clean code &amp; creative design.
+        </p>
+        <div class="hero-cta">
+          <a href="#contact" class="btn btn-primary" id="hero-contact-btn">
+            <i class="fas fa-paper-plane"></i> Contact Me
+          </a>
+          <a href="#projects" class="btn btn-outline" id="hero-projects-btn">
+            <i class="fas fa-code"></i> View Projects
+          </a>
+        </div>
+        <div class="hero-social">
+          <a href="https://github.com/rajatshrmaa" target="_blank" class="social-icon" id="hero-github"
+            aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/rajat-sharma-299023382" target="_blank" class="social-icon"
+            id="hero-linkedin" aria-label="LinkedIn">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:rajat.shrmaa26@gmail.com" class="social-icon" id="hero-email" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:9079367627" class="social-icon" id="hero-phone" aria-label="Phone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <div class="image-ring ring-1"></div>
+          <div class="image-ring ring-2"></div>
+          <div class="profile-photo">
+            <img src="images/Profile.jpeg" alt="Rajat Sharma - Computer Science Engineer" id="profile-img"
+              onerror="this.src='https://ui-avatars.com/api/?name=Rajat+Sharma&size=400&background=38BDF8&color=0F172A&bold=true&font-size=0.4'" />
+          </div>
+          <div class="floating-badge badge-1">
+            <i class="fas fa-code"></i> Developer
+          </div>
+          <div class="floating-badge badge-2">
+            <i class="fas fa-graduation-cap"></i> B.Tech CSE
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" id="scroll-down" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="section about-section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-icon">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+          <h3>Student Developer</h3>
+          <p>
+            I am <strong>Rajat Sharma</strong>, currently pursuing a <strong>B.Tech in Computer Science &amp;
+              Engineering</strong>
+            at Vivekananda Global University (2025–2029). I enjoy building responsive websites,
+            solving programming problems, and continuously learning modern technologies.
+          </p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon">
+            <i class="fas fa-rocket"></i>
+          </div>
+          <h3>My Mission</h3>
+          <p>
+            My goal is to become a skilled <strong>full-stack software engineer</strong>. I am passionate
+            about creating meaningful applications that solve real-world problems and provide
+            excellent user experiences through clean, efficient code.
+          </p>
+        </div>
+        <div class="about-card glass-card">
+          <div class="about-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>What I Do</h3>
+          <p>
+            I specialize in <strong>web development</strong>, crafting responsive interfaces with HTML, CSS &amp;
+            JavaScript. I also enjoy competitive programming, exploring new frameworks,
+            and contributing to collaborative coding projects.
+          </p>
+        </div>
+      </div>
+      <div class="about-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Projects Built</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Technologies</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="89" data-suffix="%">0</span>
+          <span class="stat-label">Class 12 Score</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="1">0</span>
+          <span class="stat-label">Year of Study</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section class="section skills-section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-card glass-card" id="skill-html">
+          <div class="skill-icon html-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h3 class="skill-name">HTML5</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="90" style="--skill-level: 90%"></div>
+          </div>
+          <span class="skill-level">90%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-css">
+          <div class="skill-icon css-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h3 class="skill-name">CSS3</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="85" style="--skill-level: 85%"></div>
+          </div>
+          <span class="skill-level">85%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-js">
+          <div class="skill-icon js-icon">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <h3 class="skill-name">JavaScript</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="75" style="--skill-level: 75%"></div>
+          </div>
+          <span class="skill-level">75%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-python">
+          <div class="skill-icon python-icon">
+            <i class="fab fa-python"></i>
+          </div>
+          <h3 class="skill-name">Python</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="70" style="--skill-level: 70%"></div>
+          </div>
+          <span class="skill-level">70%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-java">
+          <div class="skill-icon java-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <h3 class="skill-name">Java</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="65" style="--skill-level: 65%"></div>
+          </div>
+          <span class="skill-level">65%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-cpp">
+          <div class="skill-icon cpp-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="skill-name">C++</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="68" style="--skill-level: 68%"></div>
+          </div>
+          <span class="skill-level">68%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-git">
+          <div class="skill-icon git-icon">
+            <i class="fab fa-git-alt"></i>
+          </div>
+          <h3 class="skill-name">Git</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="78" style="--skill-level: 78%"></div>
+          </div>
+          <span class="skill-level">78%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-github">
+          <div class="skill-icon github-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h3 class="skill-name">GitHub</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="80" style="--skill-level: 80%"></div>
+          </div>
+          <span class="skill-level">80%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-responsive">
+          <div class="skill-icon responsive-icon">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <h3 class="skill-name">Responsive Design</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="82" style="--skill-level: 82%"></div>
+          </div>
+          <span class="skill-level">82%</span>
+        </div>
+
+        <div class="skill-card glass-card" id="skill-problem">
+          <div class="skill-icon problem-icon">
+            <i class="fas fa-brain"></i>
+          </div>
+          <h3 class="skill-name">Problem Solving</h3>
+          <div class="skill-bar-container">
+            <div class="skill-bar" data-level="85" style="--skill-level: 85%"></div>
+          </div>
+          <span class="skill-level">85%</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION SECTION ===== -->
+  <section class="section education-section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Education <span class="gradient-text">Timeline</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item" id="edu-btech">
+          <div class="timeline-dot">
+            <i class="fas fa-university"></i>
+          </div>
+          <div class="timeline-date">
+            <span>2025 – 2029</span>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-badge">🎓 Current</div>
+            <h3 class="timeline-title">B.Tech in Computer Science &amp; Engineering</h3>
+            <p class="timeline-institution">
+              <i class="fas fa-building"></i> Vivekananda Global University
+            </p>
+            <p class="timeline-detail">
+              <i class="fas fa-calendar-alt"></i> Currently in <strong>1st Year</strong>
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">CSE</span>
+              <span class="tag">B.Tech</span>
+              <span class="tag">1st Year</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-class12">
+          <div class="timeline-dot">
+            <i class="fas fa-school"></i>
+          </div>
+          <div class="timeline-date">
+            <span>2024 – 2025</span>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-badge score-badge">📊 89.50%</div>
+            <h3 class="timeline-title">Class 12 – Senior Secondary</h3>
+            <p class="timeline-institution">
+              <i class="fas fa-building"></i> Tiny Tots Public Senior Secondary School
+            </p>
+            <p class="timeline-detail">
+              <i class="fas fa-flask"></i> Science (PCM) &nbsp;|&nbsp; <strong>89.50%</strong>
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Science</span>
+              <span class="tag">PCM</span>
+              <span class="tag">89.50%</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item" id="edu-class10">
+          <div class="timeline-dot">
+            <i class="fas fa-book"></i>
+          </div>
+          <div class="timeline-date">
+            <span>2022 – 2023</span>
+          </div>
+          <div class="timeline-card glass-card">
+            <div class="timeline-badge score-badge">📊 89.50%</div>
+            <h3 class="timeline-title">Class 10 – Secondary School</h3>
+            <p class="timeline-institution">
+              <i class="fas fa-building"></i> Shalom English Secondary School, Sawai Madhopur
+            </p>
+            <p class="timeline-detail">
+              <i class="fas fa-star"></i> Percentage: <strong>89.50%</strong>
+            </p>
+            <div class="timeline-tags">
+              <span class="tag">Secondary</span>
+              <span class="tag">89.50%</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES SECTION ===== -->
+  <section class="section certificates-section" id="certificates">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Achievements</span>
+        <h2 class="section-title">My <span class="gradient-text">Certificates</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">Verified credentials that reflect my commitment to continuous learning.</p>
+      </div>
+      <div class="certificates-grid">
+
+        <div class="cert-card glass-card" id="cert-1">
+          <div class="cert-img-wrapper">
+            <img src="images/Certificate 1.png" alt="Certificate 1" class="cert-img" loading="lazy" />
+            <div class="cert-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-badge"><i class="fas fa-award"></i> Certificate</div>
+            <h3 class="cert-title">Achievement Certificate 1</h3>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" id="cert-2">
+          <div class="cert-img-wrapper">
+            <img src="images/Certificate 2.png" alt="Certificate 2" class="cert-img" loading="lazy" />
+            <div class="cert-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-badge"><i class="fas fa-award"></i> Certificate</div>
+            <h3 class="cert-title">Achievement Certificate 2</h3>
+          </div>
+        </div>
+
+        <div class="cert-card glass-card" id="cert-3">
+          <div class="cert-img-wrapper">
+            <img src="images/Certificate 3.png" alt="Certificate 3" class="cert-img" loading="lazy" />
+            <div class="cert-overlay">
+              <i class="fas fa-search-plus"></i>
+            </div>
+          </div>
+          <div class="cert-info">
+            <div class="cert-badge"><i class="fas fa-award"></i> Certificate</div>
+            <h3 class="cert-title">Achievement Certificate 3</h3>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-label="Certificate Preview">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <div class="lightbox-content">
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <img src="" alt="Certificate Preview" id="lightboxImg" />
+    </div>
+  </div>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card glass-card" id="project-portfolio">
+          <div class="project-header">
+            <div class="project-icon">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rajatshrmaa" target="_blank" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-description">
+            A modern, fully responsive personal portfolio website built with pure HTML, CSS &amp; JavaScript.
+            Features glassmorphism design, smooth animations, and an interactive UI.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">JavaScript</span>
+          </div>
+          <a href="https://github.com/rajatshrmaa" target="_blank" class="project-btn">
+            <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="project-card glass-card" id="project-weather">
+          <div class="project-header">
+            <div class="project-icon weather-icon">
+              <i class="fas fa-cloud-sun"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rajatshrmaa" target="_blank" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather App</h3>
+          <p class="project-description">
+            A responsive weather application that fetches real-time data using a public weather API.
+            Displays temperature, humidity, wind speed, and weather conditions beautifully.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">JavaScript</span>
+            <span class="tech-tag">REST API</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/rajatshrmaa" target="_blank" class="project-btn">
+            <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="project-card glass-card" id="project-sms">
+          <div class="project-header">
+            <div class="project-icon sms-icon">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/rajatshrmaa" target="_blank" class="project-link" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="#" class="project-link" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-description">
+            A full-featured CRUD application for managing student records. Supports adding, editing,
+            deleting, and searching student data with a clean and intuitive interface.
+          </p>
+          <div class="project-tech">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+          </div>
+          <a href="https://github.com/rajatshrmaa" target="_blank" class="project-btn">
+            <i class="fab fa-github"></i> View on GitHub <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+        <p class="section-subtitle">
+          Have a project in mind or want to collaborate? I'd love to hear from you!
+        </p>
+      </div>
+      <div class="contact-grid">
+
+        <a href="tel:9079367627" class="contact-card glass-card" id="contact-phone">
+          <div class="contact-icon phone-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div class="contact-info">
+            <h3>Phone</h3>
+            <p>+91 9079367627</p>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+
+        <a href="mailto:rajat.shrmaa26@gmail.com" class="contact-card glass-card" id="contact-email">
+          <div class="contact-icon email-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-info">
+            <h3>Email</h3>
+            <p>rajat.shrmaa26@gmail.com</p>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+
+        <a href="https://github.com/rajatshrmaa" target="_blank" class="contact-card glass-card" id="contact-github">
+          <div class="contact-icon github-contact-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <div class="contact-info">
+            <h3>GitHub</h3>
+            <p>github.com/rajatshrmaa</p>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/rajat-sharma-299023382" target="_blank" class="contact-card glass-card"
+          id="contact-linkedin">
+          <div class="contact-icon linkedin-icon">
+            <i class="fab fa-linkedin-in"></i>
+          </div>
+          <div class="contact-info">
+            <h3>LinkedIn</h3>
+            <p>linkedin.com/in/rajat-sharma-299023382</p>
+          </div>
+          <i class="fas fa-arrow-right contact-arrow"></i>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-text">RS<span class="logo-dot">.</span></span>
+        <p>Rajat Sharma</p>
+      </div>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://github.com/rajatshrmaa" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/rajat-sharma-299023382" target="_blank" aria-label="LinkedIn"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:rajat.shrmaa26@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <a href="tel:9079367627" aria-label="Phone"><i class="fas fa-phone"></i></a>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Rajat Sharma. All Rights Reserved.</p>
+        <p>Designed with <span class="heart">❤️</span> using HTML &amp; CSS</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
