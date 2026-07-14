@@ -44,6 +44,7 @@ The portfolio is designed with a clean dark theme, smooth layouts, responsive de
 
 - index.html
 - script.js
+- style.css
 - images
 
 ## 👩‍💻 Author
